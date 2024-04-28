@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom"
+// import React from "react";
+import { useState } from "react";
 import  Image  from "../Image/developer.png"
 import { HiBars3CenterLeft } from "react-icons/hi2";
 import Innernav from "./Innernav";
 
 function Nav() {
+  const [show, setshow]=useState(false);
+ 
   return (
  <>
  <div className="bg-slate-100 shadow-lg shadow-cyan-100  sticky top-0 ">
@@ -23,10 +27,15 @@ Juwel Rana
   <Link className="  px-4 py-2 items-center hover:text-blue-600" to="/Contact" >Contact</Link>
   <Link className="  px-4 py-2 items-center hover:text-blue-600" to="/Project">Project</Link>
 </div>
-<HiBars3CenterLeft className=" w-7 h-7 mx-auto mr-3 my-auto hover:text-blue-600  md:hidden" /> 
+
+<HiBars3CenterLeft onClick={()=>  setshow(!show)} className=" w-7 h-7 mx-auto mr-3 my-auto hover:text-blue-600  md:hidden" /> 
  </div>
  </div>
-<Innernav></Innernav>
+ {
+  show?<Innernav/>:null
+ }
+
+   
  </>
   )
 }
