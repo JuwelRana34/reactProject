@@ -1,11 +1,13 @@
-import Nav from "../Component/Navbar/Nav"
+// import Nav from "../Component/Navbar/Nav"
+
+import { NavbarComponent } from "../Component/NavbarComponent"
 
 
 function Home() {
   return (
     <>
-    <Nav></Nav>
-    <h1>Home</h1>                                                                          
+   <NavbarComponent/>
+                                                                         
                                                                          
     </>
   )
