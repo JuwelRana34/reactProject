@@ -8,9 +8,6 @@ const Juwel = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
- 
-
   return (
     <nav className="bg-indigo-500 shadow-lg  p-4">
       <div className="container mx-auto flex justify-between items-center relative">
@@ -20,10 +17,8 @@ const Juwel = () => {
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-white focus:outline-none">
             <svg className="h-6 w-6 z-500" viewBox="0 0 24 24">
-              {isOpen ? (
-                <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+            {!isOpen && (
+                 <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
               )}
             </svg>
           </button>
