@@ -1,11 +1,12 @@
 // import React from 'react'
 // import Nav from "../Component/Navbar/Nav"
-import { NavbarComponent } from "../Component/NavbarComponent"
+import Juwel from "../Component/Navbar/Juwel"
+
 function About() {
   return (
     <>
-    <NavbarComponent/>
-    <h1> hi  i am projecet</h1>
+    <Juwel/>
+    <h1> hi  i am About</h1>
     </>
   )
 }
