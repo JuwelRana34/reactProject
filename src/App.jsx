@@ -4,6 +4,7 @@ import Home from "./Pages/Home"
 import About from "./Pages/About"
 import Contact from "./Pages/Contact"
 import Project from "./Pages/Project"
+import Nopage from './Pages/Nopage'
 function App() {
 
 
@@ -15,6 +16,7 @@ function App() {
       <Route path='/About' element={<About/>} />
       <Route path='/Contact' element={<Contact/>} />
       <Route path='/Project' element={<Project/>} />
+      <Route path='/*' element={<Nopage/>} />
     </Routes>
     </BrowserRouter>
       
