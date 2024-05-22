@@ -9,6 +9,10 @@ export default {
   presets: [keepPreset],
   theme: {
     extend: {},
+    fontFamily:{
+      poetsen:["Poetsen One", "sans-serif"],
+      pacifico:["Pacifico", "cursive"]
+    }
   },
   plugins: [],
 }

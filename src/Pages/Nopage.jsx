@@ -6,8 +6,11 @@ function Nopage() {
     <>
     <div className=" w-full h-auto mx-auto  justify-center items-center">
        <img src={Image} alt="" className=" w-[95%] h-auto justify-center items-center"  />
-    <Link to='/' className=" p-4 bg-blue-600 text-white rounded-lg justify-center 
-    items-center text-center mx-auto ml-5 w-auto h-auto inline-block  hover:bg-indigo-400 transition-all m-2 ">Back</Link>
+       <button className=" p-4 m-1 justify-center items-center mx-auto bg-blue-500 text-center text-white text-lg font-serif rounded-md ">
+       <Link to='/' ></Link>
+          Back
+       </button>
+    
     </div>
    
     </>
