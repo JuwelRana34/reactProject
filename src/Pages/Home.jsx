@@ -2,6 +2,7 @@
 
 import Juwel from "../Component/Navbar/Juwel"
 import Footer from "../Component/Footer/Footer"
+import Hader from "../Component/Hader"
 
 
 
@@ -13,9 +14,9 @@ function Home() {
     <>
     <div className=" h-screen">
          <Juwel/>
-      
+         <Hader/>
                                      
-   <Footer/>
+         <Footer/>
     </div>
 
     </>

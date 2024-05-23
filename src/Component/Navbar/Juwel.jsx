@@ -10,10 +10,13 @@ const Juwel = () => {
   };
   return (
     <nav className="  shadow-lg shadow-cyan-100 mb-2 bg-slate-100  p-4">
+
       <div className="container  mx-auto flex justify-between items-center relative">
         <div className="flex items-center">
           <Link to="/" className="text-white font-bold text-lg"><img src={Image} alt="" className="space-x-4 h-10 w-10  " /> </Link>
+        
         </div>
+        <h1 className=' md:hidden font-semibold  font-pacifico text-orange-500 text-xl'>juwel Rana </h1>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-indigo-500 focus:outline-none">
             <svg className="h-6 w-6 z-500" viewBox="0 0 24 24">
@@ -22,6 +25,7 @@ const Juwel = () => {
               )}
             </svg>
           </button>
+          
         </div>
         <div className=" hidden   md:block flex-col md:flex-row space-x-5 items-center mt-2">
             <Link to="/"        className="text-Black text-lg hover:text-indigo-600 py-2">Home</Link>
