@@ -26,7 +26,7 @@ function Hader() {
          <FileDownload fileName="Download_Cv" fileUrl="../assets/404.jpg"/>
          <FaDownload className=" ml-2 text-xl" /> 
        </button>
-
+<a href="../assets/404.jpg">donwnl</a>
     </div>
     
    
