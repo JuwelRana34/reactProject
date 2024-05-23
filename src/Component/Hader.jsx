@@ -23,7 +23,7 @@ function Hader() {
        <Link   to="/Contact"><button  className="contactbtn"> Contact</button> </Link>
      
        <button  className="downloadbtn" >
-         <FileDownload fileName="Download_Cv.pdf" fileUrl="../../public/Juwel Rana's CV.pdf"/>
+         <FileDownload fileName="Download_Cv" fileUrl="../assets/404.jpg"/>
          <FaDownload className=" ml-2 text-xl" /> 
        </button>
 
