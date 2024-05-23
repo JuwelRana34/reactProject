@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Image  from '../Image/developer.png';
 
-const Juwel = () => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -56,4 +56,4 @@ const Juwel = () => {
   );
 };
 
-export default Juwel;
+export default Navbar;

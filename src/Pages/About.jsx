@@ -1,12 +1,12 @@
 // import React from 'react'
 // import Nav from "../Component/Navbar/Nav"
 import Footer from "../Component/Footer/Footer"
-import Juwel from "../Component/Navbar/Juwel"
+import Navbar from "../Component/Navbar/Navbar"
 
 function About() {
   return (
     <>
-    <Juwel/>
+    <Navbar/>
     <h1> hi  i am About</h1>
     <Footer/>
     </>

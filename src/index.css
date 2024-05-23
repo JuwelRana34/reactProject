@@ -2,3 +2,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components{
+    /* header css */
+
+    .headerleft{
+      @apply  flex-1 justify-center items-center flex flex-col mt-5 py-5 bg-gradient-to-b from-white to-green-100
+    }
+    .headerRight{
+      @apply flex-1 bg-green-100  md:mt-5 md:bg-gradient-to-b from-white to-green-100
+    }
+    .downloadbtn{
+        @apply p-3 m-2 bg-green-500 px-3
+         hover:bg-gradient-to-l transition duration-700 ease-in-out
+          from-blue-400 to-[#b709f4] text-white mt-2 text-base
+           md:text-lg font-semibold rounded-md flex justify-center
+            items-center
+    }
+    .contactbtn{
+        @apply p-3 m-2 text-center bg-orange-400 px-10
+         text-white mt-2 text-base md:text-lg font-semibold
+          rounded-md
+    }
+     /* header css end */
+}
