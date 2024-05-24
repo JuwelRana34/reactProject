@@ -1,17 +1,26 @@
-import { useRef } from "react";
+import {useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import { Player } from "@lottiefiles/react-lottie-player";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function ContactUs() {
-// const [ usep, setusep]=useState(false)
+const [ sendText, setsendText]= useState('Send')
 
-    const form = useRef();
+         const form = useRef();
+    
+         
+           function btntext(){
+                setTimeout(()=>{
+                  setsendText('Send')
+                },3000)  
+                }
+
 
     const sendEmail = (e) => {
         e.preventDefault();
-    console.log(e.target.value)
+        setsendText('sending...')
+
         emailjs
           .sendForm('service_9ygswwv', 'template_ayr4gdd', form.current, {
             publicKey: 'user_LN4DoRR1JLQvmCTNWw6ri',
@@ -25,6 +34,8 @@ function ContactUs() {
                 toast.success('Your message has been sent successfully!',{
                   position: "top-center",
                 });
+                setsendText('Sent')
+                btntext()
                 
             },
             () => {
@@ -51,7 +62,7 @@ function ContactUs() {
       <label className="label">Message</label>
       <textarea className="inputfild" placeholder="Type your message..." name="message" />
       
-      <input className=" w-5/6 mx-auto p-3 bg-blue-500 text-white my-2 rounded-md " type="submit" value="Send" />
+      <input className=" w-5/6 mx-auto p-3 bg-blue-500 text-white my-2 rounded-md " type="submit" value={sendText} />
      
 
    <ToastContainer />
