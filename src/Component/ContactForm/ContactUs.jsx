@@ -1,9 +1,11 @@
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import { Player } from "@lottiefiles/react-lottie-player";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function ContactUs() {
-const [ usep, setusep]=useState(false)
+// const [ usep, setusep]=useState(false)
 
     const form = useRef();
 
@@ -17,19 +19,26 @@ const [ usep, setusep]=useState(false)
           })
           .then(
             () => {
-                // alert("SUCCESS!")
-                setusep(true)
-            //   console.log('');
+                 form.current.reset();
+                // setusep(true)
+               
+                toast.success('Your message has been sent successfully!',{
+                  position: "top-center",
+                });
+                
             },
-            (error) => {
-              console.log('FAILED...', error.text);
+            () => {
+              // console.log('FAILED...', error.text);
+              toast.error("Oops! something is wrong, try again.", {
+                position: "top-center",
+              })
             },
             
           );
       };
 
   return (
-    <div className=" h-screen mb-5 md:flex">
+    <div className=" md:h-screen mb-5 md:flex">
     
     <form ref={form} onSubmit={sendEmail} className="flex flex-col  mx-auto  md:w-3/6"  >
 
@@ -44,19 +53,19 @@ const [ usep, setusep]=useState(false)
       
       <input className=" w-5/6 mx-auto p-3 bg-blue-500 text-white my-2 rounded-md " type="submit" value="Send" />
      
-    
 
+   <ToastContainer />
     </form>
 
     <div className=" mx-auto flex flex-col justify-start ">
-   {usep &&  <p className="text-green-500 text-sm m-2">massage sent SUCCESSFULLY</p> }
+
     <Player
     src="https://lottie.host/0cf58c2f-ba81-42ea-b291-33259fe5b6ea/e2QxPlDn6F.json"
     className=" h-64 w-64 md:h-96 md:w-96"
     loop 
     autoplay
-    
-    />
+   />
+
     </div>
 
 
