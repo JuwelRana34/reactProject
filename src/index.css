@@ -23,7 +23,7 @@
     .contactbtn{
         @apply p-3 m-2 text-center bg-orange-400 px-10
          text-white mt-2 text-base md:text-lg font-semibold
-          rounded-md
+          rounded-md shadow-lg shadow-orange-200
     }
      /* header css end */
 
