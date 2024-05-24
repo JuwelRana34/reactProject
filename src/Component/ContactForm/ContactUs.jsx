@@ -13,7 +13,7 @@ const [ sendText, setsendText]= useState('Send')
            function btntext(){
                 setTimeout(()=>{
                   setsendText('Send')
-                },3000)  
+                },5000)  
                 }
 
 
