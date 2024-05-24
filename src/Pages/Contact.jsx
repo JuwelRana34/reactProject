@@ -7,7 +7,7 @@ function Contact() {
   return (
     <div>
     <Navbar/> 
-    <h1 className=" text-center mt-10">contact </h1>
+    <h1 className=" bg-green-400 text-white w-3/6 md:w-2/12 mx-auto items-center py-2 rounded-md text-xl shadow-xl shadow-green-200 text-center mt-10">Contact Me </h1>
    <ContactUs/>
 
     <Footer />

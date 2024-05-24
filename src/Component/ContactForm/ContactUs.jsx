@@ -62,7 +62,7 @@ const [ sendText, setsendText]= useState('Send')
       <label className="label">Message</label>
       <textarea className="inputfild" placeholder="Type your message..." name="message" />
       
-      <input className=" w-5/6 mx-auto p-3 bg-blue-500 text-white my-2 rounded-md " type="submit" value={sendText} />
+      <input className=" shadow-lg shadow-blue-200 w-5/6 mx-auto p-3 bg-blue-500 text-white my-2 rounded-md " type="submit" value={sendText} />
      
 
    <ToastContainer />
@@ -72,7 +72,7 @@ const [ sendText, setsendText]= useState('Send')
 
     <Player
     src="https://lottie.host/0cf58c2f-ba81-42ea-b291-33259fe5b6ea/e2QxPlDn6F.json"
-    className=" h-64 w-64 md:h-96 md:w-96"
+    className=" h-72 w-72 md:h-96 md:w-96"
     loop 
     autoplay
    />
