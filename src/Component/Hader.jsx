@@ -9,7 +9,7 @@ function Hader() {
 
  
   return (
-    <>
+    <div className=" h-screen">
 <div className=" md:flex">
 
 
@@ -57,7 +57,7 @@ direction={-1}
         duration: 600
       })
     }
-    </>
+    </div>
   )
 }
 
