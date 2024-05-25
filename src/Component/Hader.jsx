@@ -4,13 +4,15 @@ import { Player } from '@lottiefiles/react-lottie-player';
 import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import SocilaLink from './Socialicon/SocilaLink';
 
 function Hader() {
 
  
   return (
-    <div className=" h-screen">
-<div className=" md:flex">
+    <div className=" mt-5  h-screen bg-gradient-to-b from-white to-green-100">
+
+    <div className=" md:flex">
 
 
 <div className="headerleft">
@@ -18,7 +20,7 @@ function Hader() {
     <h1 data-aos="zoom-in" className=" font-poetsen text-4xl text-green-700"> Juwel Rana </h1>
     <h3 data-aos="zoom-in"  className="text-xl my-4 font-pacifico">  code with me.</h3>
     
-    <div className="btn flex justify-evenly ">
+    <div className="btn flex flex-col justify-evenly ">
 
        <Link   to="/Contact"><button  className="contactbtn"> Contact</button> </Link>
      
@@ -26,7 +28,7 @@ function Hader() {
          <FileDownload fileName="Download_Cv" fileUrl="/public/Juwel Rana's CV.pdf"/>
          <FaDownload className=" ml-2 text-xl" /> 
        </button> */}
-
+    <SocilaLink/>
     </div>
     
    
