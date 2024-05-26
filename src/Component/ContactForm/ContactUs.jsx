@@ -56,10 +56,10 @@ const [ sendText, setsendText]= useState('Send')
       <label className=" label">Name:</label>
       <input className=" inputfild " placeholder="Type your name..." type="text" name="user_name" />
       
-      <label className="label">Email</label>
+      <label className="label">Email:</label>
       <input className="inputfild" type="email" placeholder="Type your email..." name="user_email" />
       
-      <label className="label">Message</label>
+      <label className="label">Message:</label>
       <textarea className="inputfild" placeholder="Type your message..." name="message" />
       
       <input className=" shadow-lg shadow-blue-200 w-5/6 mx-auto p-3 bg-blue-500 text-white my-2 rounded-md " type="submit" value={sendText} />

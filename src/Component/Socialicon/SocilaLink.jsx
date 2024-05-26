@@ -5,10 +5,10 @@ import { FaLinkedin } from "react-icons/fa";
 
 function SocilaLink() {
   return (
-    <div className="flex text-3xl justify-evenly mt-2 ">
+    <div className="flex text-4xl justify-evenly mt-4 ">
 
         <a href="https://www.facebook.com/juwel34/">
-             <SiFacebook className=" text-blue-500  " />
+             <SiFacebook className=" text-blue-500 " />
         </a>
 
         <a href=" https://instagram.com/juwelrana906?igshid=OGQ5ZDc2ODk2ZA==">
@@ -18,7 +18,7 @@ function SocilaLink() {
              <BsWhatsapp className=" text-green-500  " />
         </a>
         <a href="linkedin.com/in/juwel-rana-14b563204">
-             <FaLinkedin className=" text-blue-500  " />
+             <FaLinkedin className=" text-blue-700  " />
         </a>
        
       

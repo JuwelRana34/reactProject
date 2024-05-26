@@ -20,9 +20,9 @@ function Hader() {
     <h1 data-aos="zoom-in" className=" font-poetsen text-4xl text-green-700"> Juwel Rana </h1>
     <h3 data-aos="zoom-in"  className="text-xl my-4 font-pacifico">  code with me.</h3>
     
-    <div className="btn flex flex-col justify-evenly ">
+    <div className="btn w-full flex flex-col justify-evenly ">
 
-       <Link   to="/Contact"><button  className="contactbtn"> Contact</button> </Link>
+       <Link  className='text-center'  to="/Contact"><button  className="contactbtn"> Contact</button> </Link>
      
        {/* <button  className="downloadbtn" >
          <FileDownload fileName="Download_Cv" fileUrl="/public/Juwel Rana's CV.pdf"/>
