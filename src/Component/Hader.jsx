@@ -10,17 +10,17 @@ function Hader() {
 
  
   return (
-    <div className=" mt-5  h-screen bg-gradient-to-b from-white to-green-100">
+    <div className=" mt-5 h-screen bg-gradient-to-b from-white to-green-100">
 
     <div className=" md:flex">
 
 
 <div className="headerleft">
     
-    <h1 data-aos="zoom-in" className=" font-poetsen text-4xl text-green-700"> Juwel Rana </h1>
+    <h1 data-aos="zoom-in" className=" hederText font-poetsen text-4xl "> Juwel Rana </h1>
     <h3 data-aos="zoom-in"  className="text-xl my-4 font-pacifico">  code with me.</h3>
     
-    <div className="btn w-full flex flex-col justify-evenly ">
+    <div className="btn w-full flex flex-col justify-evenly  ">
 
        <Link  className='text-center'  to="/Contact"><button  className="contactbtn"> Contact</button> </Link>
      

@@ -1,0 +1,16 @@
+.hederText {
+    animation: hederText 6s linear infinite;
+    background-image: linear-gradient(45deg, #7028e4, #e5b2ca, #7028e4);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: t;
+    color: transparent;
+}
+@keyframes hederText{
+   0% {
+    background-position:0;
+   } 
+   100% {
+    background-position:200%;
+   } 
+}

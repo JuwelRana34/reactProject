@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 function SocilaLink() {
   return (
-    <div className="flex text-4xl justify-evenly mt-4 ">
+    <div className="flex text-4xl justify-center gap-6 mt-4 ">
 
         <a href="https://www.facebook.com/juwel34/">
              <SiFacebook className=" text-blue-500 " />

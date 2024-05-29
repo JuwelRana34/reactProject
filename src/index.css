@@ -22,7 +22,7 @@
     }
     .contactbtn{
         @apply p-3 m-2 text-center  bg-gradient-to-r from-yellow-200 to-green-500 px-10
-         text-white mt-2 text-base md:text-lg font-semibold
+         text-white text-lg mt-2  md:text-xl font-semibold
           rounded-md shadow-lg shadow-orange-200 hover:bg-gradient-to-r hover:from-green-500 hover:to-yellow-300
     }
      /* header css end */

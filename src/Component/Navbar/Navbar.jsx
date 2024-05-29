@@ -27,27 +27,27 @@ const Navbar = () => {
           </button>
           
         </div>
-        <div className=" hidden   md:block flex-col md:flex-row space-x-5 items-center mt-2">
+        <div className=" hidden   md:block flex-col md:flex-row md:space-x-5 items-center mt-2">
             <Link to="/"        className="text-Black text-lg hover:text-indigo-600 py-2">Home</Link>
             <Link to="/About"   className="text-Black text-lg hover:text-indigo-600 py-2">About</Link>
             <Link to="/Project" className="text-Black text-lg hover:text-indigo-600 py-2">Project</Link>
             <Link to="/Contact" className="text-Black text-lg hover:text-indigo-600 py-2">Contact</Link>
           </div>
-        <div className={`md:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'} fixed top-0 right-0 h-full w-3/4 bg-indigo-500 z-50 transition-transform transform`}>
+        <div className={`md:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'} fixed top-0 right-0 h-full w-3/4 backdrop-blur-sm bg-white/70 z-50 transition-transform transform`}>
   {/* Close button */}
   {isOpen && (
-    <button onClick={() => setIsOpen(false)} className="absolute top-0 right-0 m-4 text-white">
+    <button onClick={() => setIsOpen(false)} className="absolute top-0 right-0 m-4 text-black">
       <svg className="h-6 w-6" viewBox="0 0 24 24">
       <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
       </svg>
 
     </button>
   )}
-          <div className="flex  flex-col md:flex-row space-x-5 items-center text-center w-full mx-auto mt-20">
-            <Link to="/"        className="text-white  hover:bg-blue-400 w-full  hover:shadow-lg h-auto text-lg font-serif py-2">     Home</Link>
-            <Link to="/About"   className="text-white  hover:bg-blue-400 w-full  hover:shadow-lg h-auto text-lg font-serif py-2">About</Link>
-            <Link to="/Project" className="text-white hover:bg-blue-400 w-full  hover:shadow-lg h-auto text-lg font-serif   py-2">Project</Link>
-            <Link to="/Contact" className="text-white  hover:bg-blue-400 w-full  hover:shadow-lg h-auto text-lg font-serif py-2">Contact</Link>
+          <div className="flex  flex-col md:flex-row font-semibold  items-center text-center w-full mx-auto mt-20">
+            <Link to="/"        className="text-black border-b-[1px]  hover:bg-gray-100 w-full  hover:shadow-lg h-auto text-lg font-serif py-2">Home</Link>
+            <Link to="/About"   className="text-black border-b-[1px]  hover:bg-gray-100 w-full  hover:shadow-lg h-auto text-lg font-serif py-2">About</Link>
+            <Link to="/Project" className="text-black border-b-[1px] hover:bg-gray-100 w-full  hover:shadow-lg h-auto text-lg font-serif   py-2">Project</Link>
+            <Link to="/Contact" className="text-black border-b-[1px]  hover:bg-gray-100 w-full  hover:shadow-lg h-auto text-lg font-serif py-2">Contact</Link>
           </div>
         </div>
         </div>
