@@ -5,20 +5,20 @@ import { FaLinkedin } from "react-icons/fa";
 
 function SocilaLink() {
   return (
-    <div className="flex text-4xl justify-center gap-6 mt-4 ">
+    <div className="flex text-4xl justify-center w-full gap-4 mt-4 ">
 
         <a href="https://www.facebook.com/juwel34/">
-             <SiFacebook className=" text-blue-500 " />
+             <SiFacebook className=" text-blue-500 hover:bg-blue-500 icon hover:text-white  shadow-blue-300 " />
         </a>
 
         <a href=" https://instagram.com/juwelrana906?igshid=OGQ5ZDc2ODk2ZA==">
-             <LuInstagram className=" text-[#f34c6d]" />
+             <LuInstagram className=" icon text-white bg-gradient-to-br from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] hover:bg-blue-500 icon hover:text-white  shadow-[#6228d782] " />
         </a>
         <a href="#">
-             <BsWhatsapp className=" text-green-500  " />
+             <BsWhatsapp className="icon  text-green-500 hover:bg-green-500 icon hover:text-white  shadow-green-300   " />
         </a>
         <a href="linkedin.com/in/juwel-rana-14b563204">
-             <FaLinkedin className=" text-blue-700  " />
+             <FaLinkedin className="icon  text-blue-700 hover:bg-blue-500 icon hover:text-white  shadow-blue-300 " />
         </a>
        
       

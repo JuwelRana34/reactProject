@@ -62,7 +62,7 @@ const [ sendText, setsendText]= useState('Send')
       <label className="label">Message:</label>
       <textarea className="inputfild" placeholder="Type your message..." name="message" />
       
-      <input className=" shadow-lg shadow-blue-200 w-5/6 mx-auto p-3 bg-blue-500 text-white my-2 rounded-md " type="submit" value={sendText} />
+      <input className=" shadow-lg shadow-blue-200 w-5/6 mx-auto p-3 bg-blue-500 text-white my-6 rounded-md " type="submit" value={sendText} />
      
 
    <ToastContainer />

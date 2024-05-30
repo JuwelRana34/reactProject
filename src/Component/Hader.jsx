@@ -1,6 +1,6 @@
-// import { FaDownload } from "react-icons/fa6";
+import { FaDownload } from "react-icons/fa6";
 import { Player } from '@lottiefiles/react-lottie-player';
-// import FileDownload from "./FileDownload";
+import FileDownload from "./FileDownload";
 import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -20,17 +20,17 @@ function Hader() {
     <h1 data-aos="zoom-in" className=" hederText font-poetsen text-4xl "> Juwel Rana </h1>
     <h3 data-aos="zoom-in"  className="text-xl my-4 font-pacifico">  code with me.</h3>
     
-    <div className="btn w-full flex flex-col justify-evenly  ">
+    <div className="btn w-full flex justify-center items-center gap-0 md:gap-6 ">
 
        <Link  className='text-center'  to="/Contact"><button  className="contactbtn"> Contact</button> </Link>
      
-       {/* <button  className="downloadbtn" >
-         <FileDownload fileName="Download_Cv" fileUrl="/public/Juwel Rana's CV.pdf"/>
+       <button  className="downloadbtn" >
+         <FileDownload fileName="Download_Cv" fileUrl="/public/Juwel Rana's CV.pdf" />
          <FaDownload className=" ml-2 text-xl" /> 
-       </button> */}
-    <SocilaLink/>
-    </div>
+       </button>
     
+    </div>
+    <SocilaLink />
    
 </div>
 
