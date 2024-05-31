@@ -17,7 +17,7 @@ function SocilaLink() {
         <a href="#">
              <BsWhatsapp className="icon  text-green-500 hover:bg-green-500 icon hover:text-white  shadow-green-300   " />
         </a>
-        <a href="linkedin.com/in/juwel-rana-14b563204">
+        <a href="https://www.linkedin.com/in/juwel-rana-14b563204/">
              <FaLinkedin className="icon  text-blue-700 hover:bg-blue-500 icon hover:text-white  shadow-blue-300 " />
         </a>
        
