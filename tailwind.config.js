@@ -8,7 +8,9 @@ export default {
   ],
   presets: [keepPreset],
   theme: {
-    extend: {},
+    extend: {
+     
+    },
     fontFamily:{
       poetsen:["Poetsen One", "sans-serif"],
       pacifico:["Pacifico", "cursive"]

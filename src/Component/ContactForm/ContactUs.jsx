@@ -3,6 +3,9 @@ import emailjs from '@emailjs/browser';
 import { Player } from "@lottiefiles/react-lottie-player";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Socialicon from "../Socialicon/SocilaLink"
+
+
 
 function ContactUs() {
 const [ sendText, setsendText]= useState('Send')
@@ -62,12 +65,18 @@ const [ sendText, setsendText]= useState('Send')
       <label className="label">Message:</label>
       <textarea className="inputfild" placeholder="Type your message..." name="message" />
       
-      <input className=" shadow-lg shadow-blue-200 w-5/6 mx-auto p-3 bg-blue-500 text-white my-6 rounded-md " type="submit" value={sendText} />
-     
-
-   <ToastContainer />
+      <input className=" shadow-lg shadow-blue-200 w-5/6 mx-auto p-3  bg-blue-500 hover:bg-blue-600 text-white my-6 rounded-md " type="submit" value={sendText} />
+      
+      <div className=" flex w-5/6 justify-center mx-auto items-center">
+        <hr className=" w-full mx-auto" />
+        <p className="px-4 font-semibold text-gray-400">OR</p> 
+        <hr className=" w-full mx-auto" /> 
+      </div>
+      
+      <Socialicon/>
+      <ToastContainer />
     </form>
-
+   
     <div className=" mx-auto flex flex-col justify-start ">
 
     <Player
