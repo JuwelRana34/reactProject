@@ -13,7 +13,8 @@ export default {
     },
     fontFamily:{
       poetsen:["Poetsen One", "sans-serif"],
-      pacifico:["Pacifico", "cursive"]
+      pacifico:["Pacifico", "cursive"],
+      
     }
   },
   plugins: [],

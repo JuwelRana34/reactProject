@@ -9,7 +9,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="  shadow-lg sticky top-0 shadow-cyan-50 mb-2 backdrop-blur-lg bg-white/75 p-4">
+    <nav className="  shadow-lg   shadow-cyan-100 mb-2  p-4">
 
       <div className="container  mx-auto flex justify-between items-center relative">
         <div className="flex items-center">

@@ -5,7 +5,7 @@ import { Accordion } from "keep-react";
 
 function QustionaboutMe() {
   return (
-    <Accordion flush={true}>
+    <Accordion className="mb-10" flush={true}>
       <Accordion.Panel>
         <Accordion.Container>
           <Accordion.Title>Q. How Long time you work in this fild?</Accordion.Title>
