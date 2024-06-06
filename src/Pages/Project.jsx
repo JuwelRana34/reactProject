@@ -59,15 +59,16 @@ const handleNext = () => {
       {data.length === 0 && <p className=" font-semibold text-xl text-orange-500">Data is Loading...</p>  }
       
             
-                {currentData.map(post => (
-                 <Card  key={post.key} 
-                 style={{backgroundColor: post.id % 2===1? "#e0fcfe" : "white"}}
+                {currentData.map(({id, title, body}) => (
+                 
+                 <Card  key={id} 
+                 style={{backgroundColor: id % 2===1? "#e0fcfe" : "white"}}
                  
                  className="max-w-md ">
                  <Card.Content>
-                   <Card.Title className=" capitalize">{post.title}</Card.Title>
+                   <Card.Title className=" capitalize">{title}</Card.Title>
                    <Card.Description>
-                   {post.body}
+                   {body}
                    </Card.Description>
                  </Card.Content>
                   <Link to="/Contact"><Button color="success" className=" m-4">Contact</Button> </Link> 
