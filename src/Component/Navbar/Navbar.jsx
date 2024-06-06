@@ -13,7 +13,7 @@ const Navbar = () => {
 
       <div className="container  mx-auto flex justify-between items-center relative">
         <div className="flex items-center">
-          <Link to="/" className="text-white font-bold text-lg"><img src={Image} alt="" className="space-x-4 h-10 w-10  " /> </Link>
+          <Link to="/" className="text-white font-bold text-lg"><img src={Image} alt="" className="space-x-4 h-12 w-12  " /> </Link>
         
         </div>
         <h1 className=' md:hidden font-semibold  font-pacifico text-orange-500 text-xl'>juwel Rana </h1>

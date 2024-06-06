@@ -1,6 +1,6 @@
 import { FaDownload } from "react-icons/fa6";
 import { Player } from '@lottiefiles/react-lottie-player';
-import FileDownload from "./FileDownload";
+// import FileDownload from "./FileDownload";
 import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -25,7 +25,8 @@ function Hader() {
        <Link  className='text-center'  to="/Contact"><button  className="contactbtn"> Contact</button> </Link>
      
        <button  className="downloadbtn" >
-         <FileDownload fileName="Download_Cv" fileUrl="/public/Juwel Rana's CV.pdf" />
+         {/* <FileDownload fileName="Download_Cv" fileUrl="/public/Juwel Rana's CV.pdf" /> */}
+         <a href="/public/Juwel Rana's CV.pdf" download > download</a>
          <FaDownload className=" ml-2 text-xl" /> 
        </button>
     
