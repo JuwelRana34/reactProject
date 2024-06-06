@@ -24,20 +24,23 @@ function About() {
                {/* detail  */}
                <div className="bg-gray-100 md:w-3/6 mx-auto rounded-md my-8 ">
 
+               
                 <div className=" flex gap-5 mt-5  items-center p-3">
                  
-                 <p className=" bg-white p-3 rounded-lg"><FaPhone className=" text-2xl"/></p>
+                 <p className=" bg-white  p-3 rounded-lg shadow-lg">
+                  <a href="tel:+8809697202836"><FaPhone className="text-[#19aaf8] text-2xl"/> </a> </p>
                   <div className=" flex-col md:flex gap-2"> 
                     <h1 className=" font-semibold ">Phone:</h1>
                     <p>+8809697202836</p>                 
                   </div>
-                </div>
+                </div> 
+                
 
                 <hr className=" mx-3" />
 
                 <div className=" flex gap-5 mt-5  items-center p-3">
                  
-                 <p className=" bg-white p-3 rounded-lg"><MdEmail className=" text-2xl" /></p>
+                 <p className=" bg-white p-3 rounded-lg shadow-lg"><MdEmail className=" text-green-400  text-2xl" /></p>
                   <div className=" flex-col md:flex gap-2"> 
                     <h1 className=" font-semibold ">Email:</h1>
                     <p>juwelrana3426@gamil.com</p>                 
@@ -48,7 +51,7 @@ function About() {
 
                 <div className=" flex gap-5 mt-5  items-center p-3">
                  
-                 <p className=" bg-white p-3 rounded-lg"><GrMapLocation className=" text-2xl text-orange-600" /></p>
+                 <p className=" bg-white p-3 rounded-lg shadow-lg"><GrMapLocation className=" text-2xl text-orange-600" /></p>
                   <div className=" flex-col md:flex gap-2"> 
                     <h1 className=" font-semibold ">Location:</h1>
                     <p>Wari Dhaka, Bangladesh</p>                 
