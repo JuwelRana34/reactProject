@@ -65,10 +65,10 @@ const handleNext = () => {
                  style={{backgroundColor: id % 2===1? "#e0fcfe" : "white"}}
                  
                  className="max-w-md ">
-                 <Card.Content>
-                   <Card.Title className=" capitalize">{title}</Card.Title>
+                 <Card.Content className="p-2">
+                   <Card.Title className=" pb-5 capitalize">{title}</Card.Title>
                    <Card.Description>
-                    <img className="w-10 h-10" src={`https://lh3.google.com/u/0/d/${image}`} alt="" />
+                    <img className=" w-full object-cover" src={`https://lh3.google.com/u/0/d/${image}`} alt="" />
                    </Card.Description>
                  </Card.Content>
                  
