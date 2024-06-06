@@ -65,7 +65,7 @@ function About() {
             
              {/* qustion ans  */}
 
-              <h1 className=" text-xl font-bold  text-center text-cyan-600">Mostly Ask Qustion About me</h1>
+              <h1 className=" text-xl font-bold  text-center text-cyan-600">Mostly Ask Qustion</h1>
 
               <QustionaboutMe/>
            

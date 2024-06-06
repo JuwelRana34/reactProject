@@ -42,4 +42,13 @@
 
 
      /* contact css end  */
+
+
+     /* qustioin  */
+     .list-style  {
+      @apply  pl-4
+     }
+     .list-style li {
+      @apply  list-disc 
+     }
 }
