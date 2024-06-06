@@ -14,7 +14,7 @@ function Project() {
  const [error , seterror]= useState(null)
 
 const [currentPage, setCurrentPage] = useState(1);
-const itemsPerPage = 6;
+const itemsPerPage = 3;
 
 
 
@@ -35,7 +35,7 @@ const handleNext = () => {
   
 
  useEffect(()=>{
-  axios.get('https://jsonplaceholder.typicode.com/posts')
+  axios.get('https://juwelrana34.github.io/allProject/allProject.json')
   .then( Response => {
     setData(Response.data);
     setloading(false)
@@ -53,14 +53,14 @@ const handleNext = () => {
   return (
   <>
     <Navbar/>
-   <div className=" container grid gap-2 p-2 md:grid-cols-3  mx-auto mt-10">
+   <div className=" container grid gap-2 p-2 md:grid-cols-3 mx-auto mt-10">
    
    
       {data.length === 0 && <p className=" font-semibold text-xl text-orange-500">Data is Loading...</p>  }
       
             
-                {currentData.map(({id, title, body}) => (
-                 
+                {currentData.map(({id, title, link ,image}) => (
+
                  <Card  key={id} 
                  style={{backgroundColor: id % 2===1? "#e0fcfe" : "white"}}
                  
@@ -68,10 +68,11 @@ const handleNext = () => {
                  <Card.Content>
                    <Card.Title className=" capitalize">{title}</Card.Title>
                    <Card.Description>
-                   {body}
+                    <img className="w-10 h-10" src={`https://lh3.google.com/u/0/d/${image}`} alt="" />
                    </Card.Description>
                  </Card.Content>
-                  <Link to="/Contact"><Button color="success" className=" m-4">Contact</Button> </Link> 
+                 
+                  <Link to={link}><Button color="secondary" className=" m-4">Live</Button> </Link> 
                </Card>
                 ))}
               
