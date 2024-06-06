@@ -10,7 +10,7 @@ function Nopage() {
        <Link to='/' >  Back</Link>
         
        </button>
-    
+
     </div>
    
     </>
