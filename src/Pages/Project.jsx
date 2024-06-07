@@ -56,7 +56,7 @@ const handleNext = () => {
    <div className=" container grid gap-2 p-2 md:grid-cols-3 mx-auto mt-10">
    
    
-      {data.length === 0 && <p className=" font-semibold text-xl text-orange-500">Data is Loading...</p>  }
+      {data.length === 0 && <p className=" font-semibold text-xl p-3 bg-gray-50 rounded-lg text-orange-500">Data is Loading...</p>  }
       
             
                 {currentData.map(({id, title, link ,image}) => (
