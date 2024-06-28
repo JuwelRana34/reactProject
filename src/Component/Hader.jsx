@@ -6,11 +6,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import SocilaLink from './Socialicon/SocilaLink';
 
+
 function Hader() {
 
  
   return (
-    <div className=" mt-5 h-screen bg-gradient-to-b from-white to-green-100">
+    <div className=" mt-5 h-auto bg-gradient-to-b from-white to-green-100">
 
     <div className=" md:flex">
 
@@ -51,8 +52,8 @@ direction={-1}
 
 </div>
 
-   </div>
-
+    </div>
+   
    {
       AOS.init({
         offset: 300,

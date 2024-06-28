@@ -15,7 +15,7 @@ function Home() {
     <div className=" h-screen">
          <Navbar/>
          <Hader/>
-                                     
+                           
          <Footer/>
          
     </div>
