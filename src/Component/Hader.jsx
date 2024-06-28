@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import SocilaLink from './Socialicon/SocilaLink';
+import { HiOutlineExternalLink } from "react-icons/hi";
 
 
 function Hader() {
@@ -23,13 +24,16 @@ function Hader() {
     
     <div className="btn w-full flex justify-center items-center gap-0 md:gap-6 ">
 
-       <Link  className='text-center'  to="/Contact"><button  className="contactbtn"> Contact</button> </Link>
+       <Link  className='text-center'  to="/Contact">
+        <button  className="contactbtn"> Contact
+        <HiOutlineExternalLink className="mx-2 text-xl" />
+       </button> </Link>
      
        <button  className="downloadbtn" >
-         <FileDownload fileName="Download_Cv" fileUrl="/public/Juwel Rana's CV.pdf" />
+         <FileDownload fileName="Download_Cv" fileUrl="https://drive.google.com/uc?export=download&id=1CE0t5kRikA9O2PiANt9o0_M5qkN9JXcT" />
          <FaDownload className=" ml-2 text-xl" /> 
        </button>
-    
+
     </div>
     <SocilaLink />
    
