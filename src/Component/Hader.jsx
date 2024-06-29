@@ -30,7 +30,7 @@ function Hader() {
        </button> </Link>
      
        <button  className="downloadbtn" >
-         <FileDownload fileName="Download_Cv" fileUrl="https://drive.google.com/uc?export=download&id=1CE0t5kRikA9O2PiANt9o0_M5qkN9JXcT" />
+         <FileDownload fileName="Download_Cv" />
          <FaDownload className=" ml-2 text-xl" /> 
        </button>
 

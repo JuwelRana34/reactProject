@@ -57,13 +57,13 @@ const [ sendText, setsendText]= useState('Send')
     <form ref={form} onSubmit={sendEmail} className="flex flex-col  mx-auto  md:w-3/6"  >
 
       <label className=" label">Name:</label>
-      <input className=" inputfild " placeholder="Type your name..." type="text" name="user_name" />
+      <input className=" inputfild " placeholder="Type your name..." type="text" name="user_name" required />
       
       <label className="label">Email:</label>
-      <input className="inputfild" type="email" placeholder="Type your email..." name="user_email" />
+      <input className="inputfild" type="email" placeholder="Type your email..." name="user_email" required />
       
       <label className="label">Message:</label>
-      <textarea className="inputfild" placeholder="Type your message..." name="message" />
+      <textarea className="inputfild" placeholder="Type your message..." name="message" required />
       
       <input className=" shadow-lg shadow-blue-200 w-5/6 mx-auto p-3  bg-blue-500 hover:bg-blue-600 text-white my-6 rounded-md " type="submit" value={sendText} />
       
