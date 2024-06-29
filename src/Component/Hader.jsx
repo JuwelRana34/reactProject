@@ -1,6 +1,6 @@
-import { FaDownload } from "react-icons/fa6";
+// import { FaDownload } from "react-icons/fa6";
 import { Player } from '@lottiefiles/react-lottie-player';
-import FileDownload from "./FileDownload";
+// import FileDownload from "./FileDownload";
 import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -12,7 +12,7 @@ function Hader() {
 
  
   return (
-    <div className=" mt-5 h-auto bg-gradient-to-b from-white to-green-100">
+    <div className=" mt-5  h-auto bg-gradient-to-b from-white to-green-100">
 
     <div className=" md:flex">
 
@@ -29,13 +29,13 @@ function Hader() {
         <HiOutlineExternalLink className="mx-2 text-xl" />
        </button> </Link>
      
-       <button  className="downloadbtn" >
+       {/* <button  className="downloadbtn" >
          <FileDownload fileName="Download_Cv" />
          <FaDownload className=" ml-2 text-xl" /> 
-       </button>
+       </button> */}
 
     </div>
-    <SocilaLink />
+    <SocilaLink/>
    
 </div>
 
