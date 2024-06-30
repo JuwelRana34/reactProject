@@ -15,7 +15,7 @@ function QustionaboutMe() {
         <Accordion.Content>
        <h1 className=" text-xl font-poetsen"> I offer a range of web development services, including:</h1>
         <ul className=" list-style">
-          <li > Custom website development</li>
+          <li className=""> Custom website development</li>
           <li> Responsive design</li>
           <li> Web application development</li>
           <li> API integration</li>
