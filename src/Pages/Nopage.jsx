@@ -1,13 +1,13 @@
 import  Image  from "../assets/404.jpg"
 import { Link } from "react-router-dom"
-
+import Helmet from "react-helmet"
 // import Image from 'next/image'
 import { Button, Empty } from 'keep-react'
 
 function Nopage() {
   return (
     <>
-
+    <Helmet><title>something wrong</title></Helmet>
     <Empty>
       <Empty.Image>
         <img src={Image}  alt="404"  />

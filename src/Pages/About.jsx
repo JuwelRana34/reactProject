@@ -8,10 +8,15 @@ import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { GrMapLocation } from "react-icons/gr";
 import QustionaboutMe from "../Component/QustionaboutMe/QustionaboutMe"
+import Helmet from "react-helmet"
+
 
 function About() {
   return (
     <>
+    <Helmet>
+      <title>About- juwel Rana</title>
+    </Helmet>
     <Navbar/>
         <div className="  bg-gradient-to-t to-transparent from-teal-100  mt-8 p-2">
           <h1 className=" font-bold  text-2xl  text-center ">About Me</h1>

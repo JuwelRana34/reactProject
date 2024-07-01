@@ -6,7 +6,7 @@ import axios from 'axios';
 import { Card } from 'keep-react'
 import { Button } from 'keep-react'
 import { Link } from "react-router-dom";
-
+import Helmet from "react-helmet"
 
 function Project() {
  const [data , setData]=useState([])
@@ -52,6 +52,7 @@ const handleNext = () => {
 
   return (
   <>
+  <Helmet><title>Project</title></Helmet>
     <Navbar/>
    <div className=" container grid gap-2 p-2 md:grid-cols-3 mx-auto mt-10">
    
