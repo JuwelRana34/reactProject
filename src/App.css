@@ -32,3 +32,11 @@
     margin: 0 5px;
     padding: 10px 20px;
 }
+
+
+.web-dev:focus {
+    color: white;
+    background-color: rgb(199, 5, 134);
+    
+}
+

@@ -23,7 +23,7 @@ function About() {
             <div className=" bg-white w-full md:w-2/3 mx-auto rounded-lg p-1 mt-10 ">
                <img src={Image} alt="JuwelRana"  className=" relative -top-10 shadow-lg  text-center mx-auto  h-40 w-40 m-2 rounded-lg" />
               <h1 className=" text-center font-poetsen font-semibold text-xl text-orange-500"> Md. Juwel Rana</h1>
-              <button className=" my-2 block mx-auto p-3 text-white font-semibold text-lg bg-indigo-500 rounded-full ">Web Developer</button>
+              <button className=" web-dev my-2 block mx-auto p-3 text-white font-semibold text-lg bg-indigo-500 rounded-full ">Web Developer</button>
                <Socilaicon />
                
                {/* detail  */}

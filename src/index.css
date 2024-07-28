@@ -53,5 +53,9 @@
      .list-style li {
       @apply  list-disc 
      }
+
+     .nav-after{
+      @apply  after:content-[''] after:h-[3px] after:w-0 after:bg-orange-400 after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all 
+     }
      
 }
