@@ -63,7 +63,7 @@ const [ sendText, setsendText]= useState('Send')
       <input className="inputfild" type="email" placeholder="Type your email..." name="user_email" required />
       
       <label className="label">Message:</label>
-      <textarea className="inputfild" placeholder="Type your message..." name="message" required />
+      <textarea className="inputfild resize-none" placeholder="Type your message..." name="message" required   />
       
       <input className=" shadow-lg shadow-blue-200 w-5/6 mx-auto p-3  bg-blue-500 hover:bg-blue-600 text-white my-6 rounded-md " type="submit" value={sendText} />
       
