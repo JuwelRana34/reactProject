@@ -9,8 +9,11 @@ export default {
   presets: [keepPreset],
   theme: {
     extend: {
-     
-    },
+      backgroundImage: theme => ({
+        'gradient-to-120': 
+            'linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%)',
+            
+    }),
     fontFamily:{
       poetsen:["Poetsen One", "sans-serif"],
       pacifico:["Pacifico", "cursive"],
@@ -18,4 +21,5 @@ export default {
     }
   },
   plugins: [],
+}
 }
