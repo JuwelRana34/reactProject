@@ -36,7 +36,7 @@
 
      /* contact css start  */
     .inputfild{
-      @apply border-[1px] p-2 rounded-md text-blue-500 focus:outline-blue-200 border-blue-100 w-5/6 bg-blue-50 mx-auto placeholder:text-blue-200
+      @apply border-[0px] p-2 rounded-md text-blue-500 focus:outline-blue-200 border-blue-100 w-5/6 bg-blue-50 mx-auto placeholder:text-blue-200
     }
     .label{
       @apply text-lg p-2  ml-5 md:ml-12 font-medium text-gray-500

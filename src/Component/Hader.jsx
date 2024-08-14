@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import SocilaLink from './Socialicon/SocilaLink';
-import { HiOutlineExternalLink } from "react-icons/hi";
+// import { HiOutlineExternalLink } from "react-icons/hi";
+import { AiOutlineMessage } from "react-icons/ai";
 
 
 function Hader() {
@@ -21,13 +22,13 @@ function Hader() {
 <div className="headerleft">
     
     <h1 data-aos="zoom-in" className=" hederText font-poetsen text-4xl "> Juwel Rana </h1>
-    <h3 data-aos="zoom-in"  className="text-xl my-4 font-pacifico">  code with me.</h3>
+    <h3 data-aos="zoom-in"  className="text-xl my-4 font-borel">  code with me.</h3>
     
     <div className="btn w-full flex justify-center items-center gap-0 md:gap-6 ">
 
        <Link  className='text-center'  to="/Contact">
-        <button  className="contactbtn"> Contact
-        <HiOutlineExternalLink className="mx-2 text-xl" />
+        <button  className="contactbtn"> Contact <AiOutlineMessage className="mx-2 text-xl" />
+        {/* <HiOutlineExternalLink  /> */}
        </button> </Link>
      
        {/* <button  className="downloadbtn" >
