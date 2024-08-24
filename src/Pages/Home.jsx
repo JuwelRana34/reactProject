@@ -4,7 +4,7 @@ import Navbar from "../Component/Navbar/Navbar"
 import Footer from "../Component/Footer/Footer"
 import Hader from "../Component/Hader"
 import Helmet from "react-helmet"
-import ProgressBar from "../Component/ProgressBar/ProgressBar"
+
 
 
 function Home() {
@@ -15,8 +15,7 @@ function Home() {
     </Helmet>
     <div className=" h-screen">
          <Navbar/>
-         <Hader/>
-          <ProgressBar/>           
+         <Hader/>         
          <Footer/>
          
     </div>
