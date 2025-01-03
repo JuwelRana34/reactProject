@@ -1,9 +1,6 @@
-// import Nav from "../Component/Navbar/Nav"
-
-import Navbar from "../Component/Navbar/Navbar"
-import Footer from "../Component/Footer/Footer"
 import Hader from "../Component/Hader"
 import Helmet from "react-helmet"
+import ContactUs from "../Component/ContactForm/ContactUs"
 
 
 
@@ -13,10 +10,14 @@ function Home() {
     <Helmet>
       <title>Home</title>
     </Helmet>
-    <div className=" h-screen">
-         <Navbar/>
-         <Hader/>         
-         <Footer/>
+    <div className=" ">
+         
+         <Hader/>
+         <div id="contact" className="bg-slate-100">
+          
+         <ContactUs/>      
+          </div> 
+         
          
     </div>
 

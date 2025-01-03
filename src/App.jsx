@@ -1,30 +1,16 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import './App.css'
-import Home from "./Pages/Home"
-import About from "./Pages/About"
-import Contact from "./Pages/Contact"
-import Project from "./Pages/Project"
-import Nopage from './Pages/Nopage'
-
+import { Outlet } from "react-router-dom";
+import "./App.css";
+import Navbar from "./Component/Navbar/Navbar";
+import Footer from "./Component/Footer/Footer";
 
 function App() {
-
-
   return (
     <>
-    <BrowserRouter>
-    <Routes>
-    
-      <Route path='/' element={ <Home/> } />
-      <Route path='/About' element={<About/>} />
-      <Route path='/Contact' element={<Contact/>} />
-      <Route path='/Project' element={<Project/>} />
-      <Route path='/*' element={<Nopage/>} />
-    </Routes>
-    </BrowserRouter>
-      
+      <Navbar />
+      <Outlet />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

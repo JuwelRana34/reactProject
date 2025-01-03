@@ -1,7 +1,5 @@
 
 import { useState, useEffect } from "react"
-import Footer from "../Component/Footer/Footer"
-import Navbar from "../Component/Navbar/Navbar"
 import axios from 'axios';
 import { Card } from 'keep-react'
 import { Button } from 'keep-react'
@@ -53,7 +51,7 @@ const handleNext = () => {
   return (
   <>
   <Helmet><title>Project</title></Helmet>
-    <Navbar/>
+ 
    <div className=" container grid gap-2 p-2 md:grid-cols-3 mx-auto mt-10">
    
    
@@ -83,7 +81,7 @@ const handleNext = () => {
                 <Button color="primary" onClick={handlePrev} disabled={currentPage === 1}>Previous</Button>
                 <Button color="warning" onClick={handleNext} disabled={start + itemsPerPage >= data.length}>Next</Button>
             </div>
-    <Footer/>
+   
     </>
   )
 }

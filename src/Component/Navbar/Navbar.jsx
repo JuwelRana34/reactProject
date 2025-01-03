@@ -1,10 +1,12 @@
 import { useState } from 'react';
-// import { Link } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router';
 import Image  from '../Image/logo.png';
+import { useContext } from 'react';
+import UserContext from '../../Context/AuthContext';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const {user}= useContext(UserContext)
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -32,7 +34,8 @@ const Navbar = () => {
             <NavLink to="/"        className=" relative nav-after text-Black text-lg font-semibold hover:text-indigo-600 py-2  ">Home</NavLink>
             <NavLink  to="/About"   className="relative nav-after text-Black text-lg font-semibold hover:text-indigo-600 py-2 ">About</NavLink>
             <NavLink to="/Project" className="relative nav-after text-Black text-lg font-semibold hover:text-indigo-600 py-2">Project</NavLink>
-            <NavLink to="/Contact" className=" relative nav-after text-Black text-lg font-semibold hover:text-indigo-600 py-2">Contact</NavLink>
+            { user && <NavLink to="/dashbord" className="relative nav-after text-Black text-lg font-semibold hover:text-indigo-600 py-2">Dashbord</NavLink>} 
+          
           </div>
         <div className={`md:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'} fixed top-0 right-0 h-full w-3/4 backdrop-blur-sm bg-white/70 z-50 transition-transform transform`}>
   {/* Close button */}
@@ -48,7 +51,8 @@ const Navbar = () => {
             <NavLink to="/"        className=" text-black border-b-[1px]  hover:bg-gray-100 w-full  hover:shadow-lg h-auto text-lg font-serif py-2">Home</NavLink>
             <NavLink to="/About"   className="text-black border-b-[1px]  hover:bg-gray-100 w-full  hover:shadow-lg h-auto text-lg font-serif py-2">About</NavLink>
             <NavLink to="/Project" className="text-black border-b-[1px]  hover:bg-gray-100 w-full  hover:shadow-lg  h-auto text-lg font-serif   py-2">Project</NavLink>
-            <NavLink to="/Contact" className="text-black border-b-[1px]  hover:bg-gray-100 w-full  hover:shadow-lg h-auto text-lg font-serif py-2">Contact</NavLink>
+           {user && <NavLink to="/Project" className="text-black border-b-[1px]  hover:bg-gray-100 w-full  hover:shadow-lg  h-auto text-lg font-serif   py-2">Project</NavLink>}
+            
           </div>
         </div>
         </div>

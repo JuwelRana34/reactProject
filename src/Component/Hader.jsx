@@ -1,7 +1,7 @@
 // import { FaDownload } from "react-icons/fa6";
 import { Player } from '@lottiefiles/react-lottie-player';
 // import FileDownload from "./FileDownload";
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import SocilaLink from './Socialicon/SocilaLink';
@@ -26,10 +26,11 @@ function Hader() {
     
     <div className="btn w-full flex justify-center items-center gap-0 md:gap-6 ">
 
-       <Link  className='text-center'  to="/Contact">
+       <ScrollLink  className='text-center'  smooth={true}
+              duration={500} to="contact">
         <button  className="contactbtn"> Contact <AiOutlineMessage className="mx-2 text-xl" />
         {/* <HiOutlineExternalLink  /> */}
-       </button> </Link>
+       </button> </ScrollLink>
      
        {/* <button  className="downloadbtn" >
          <FileDownload fileName="Download_Cv" />

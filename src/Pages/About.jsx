@@ -17,7 +17,7 @@ function About() {
     <Helmet>
       <title>About- juwel Rana</title>
     </Helmet>
-    <Navbar/>
+
         <div className="  bg-gradient-to-t to-transparent from-teal-100  mt-8 p-2">
           <h1 className=" font-bold  text-2xl  text-center ">About Me</h1>
             <div className=" bg-white w-full md:w-2/3 mx-auto rounded-lg p-1 mt-10 ">
@@ -78,7 +78,7 @@ function About() {
             </div>
 
         </div>
-    <Footer/>
+    
     </>
   )
 }
